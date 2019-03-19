@@ -2,10 +2,10 @@
 
 .#{$icon-prefix}-spin:before {
     display: inline-block;
-    animation: loading-circle 1s infinite linear;
+    animation: rw-icon-loading-circle 1s infinite linear;
 }
 
-@keyframes loading-circle {
+@keyframes rw-icon-loading-circle {
     0% {
         transform: rotate(0deg);
     }
