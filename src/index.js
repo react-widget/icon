@@ -13,7 +13,7 @@ export default class Icon extends Component {
     }
 
     static defaultProps = {
-        prefixCls: 'nil-icon',
+        prefixCls: 'rw-icon',
         spin: false,
     }
 
