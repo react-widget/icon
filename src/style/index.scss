@@ -1,4 +1,6 @@
-@import "./iconfont/ionicons.scss";
+@import "./_ionicons-variables";
+@import "./_ionicons-font";
+@import "./_ionicons-icons";
 
 .#{$icon-prefix}-spin:before {
     display: inline-block;
