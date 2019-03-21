@@ -382,9 +382,10 @@ __webpack_require__(/*! ./style/index.scss */ "./examples/style/index.scss");
 
 __webpack_require__(/*! ./style/animate.scss */ "./examples/style/animate.scss");
 
+__webpack_require__(/*! ../src/style/index.scss */ "./src/style/index.scss");
+
 var _Demo = _interopRequireDefault(__webpack_require__(/*! ./Demo */ "./examples/Demo.js"));
 
-//import '../src/style/index.scss';
 _reactDom.default.render(_react.default.createElement(_Demo.default, null), demo);
 
 /***/ }),
@@ -455,8 +456,6 @@ var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ ".
 
 var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
 
-__webpack_require__(/*! ./style/index.scss */ "./src/style/index.scss");
-
 var Icon =
 /*#__PURE__*/
 function (_Component) {
@@ -524,4 +523,4 @@ module.exports = __webpack_require__(/*! ./examples/index.js */"./examples/index
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.f4f49c97.js.map
+//# sourceMappingURL=index.571667a1.js.map
