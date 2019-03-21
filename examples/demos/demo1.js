@@ -9,7 +9,12 @@ export default class DEMO extends Component {
         return (
             <div>
                 {
-                    icons.map(icon => <Icon type={icon} />)
+                    icons.map(icon => (
+                        <div className="icon-item">
+                            <Icon type={icon} />
+                            <div>{icon}</div>
+                        </div>
+                    ))
                 }
             </div >
 

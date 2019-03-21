@@ -136,7 +136,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "./";
 /******/
 /******/ 	var jsonpArray = window["webpackJsonp"] = window["webpackJsonp"] || [];
 /******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
@@ -336,9 +336,11 @@ function (_Component) {
     key: "render",
     value: function render() {
       return _react.default.createElement("div", null, _icons.default.map(function (icon) {
-        return _react.default.createElement(_index.default, {
+        return _react.default.createElement("div", {
+          className: "icon-item"
+        }, _react.default.createElement(_index.default, {
           type: icon
-        });
+        }), _react.default.createElement("div", null, icon));
       }));
     }
   }]);
@@ -380,10 +382,9 @@ __webpack_require__(/*! ./style/index.scss */ "./examples/style/index.scss");
 
 __webpack_require__(/*! ./style/animate.scss */ "./examples/style/animate.scss");
 
-__webpack_require__(/*! ../lib/style/index.css */ "./lib/style/index.css");
-
 var _Demo = _interopRequireDefault(__webpack_require__(/*! ./Demo */ "./examples/Demo.js"));
 
+//import '../src/style/index.scss';
 _reactDom.default.render(_react.default.createElement(_Demo.default, null), demo);
 
 /***/ }),
@@ -403,17 +404,6 @@ _reactDom.default.render(_react.default.createElement(_Demo.default, null), demo
 /*!***********************************!*\
   !*** ./examples/style/index.scss ***!
   \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
-/***/ "./lib/style/index.css":
-/*!*****************************!*\
-  !*** ./lib/style/index.css ***!
-  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -465,6 +455,8 @@ var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ ".
 
 var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
 
+__webpack_require__(/*! ./style/index.scss */ "./src/style/index.scss");
+
 var Icon =
 /*#__PURE__*/
 function (_Component) {
@@ -506,6 +498,17 @@ exports.default = Icon;
 
 /***/ }),
 
+/***/ "./src/style/index.scss":
+/*!******************************!*\
+  !*** ./src/style/index.scss ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ 0:
 /*!********************************************************************************************************************!*\
   !*** multi ./node_modules/packez/lib/fetchPolyfills.js ./node_modules/packez/lib/polyfills.js ./examples/index.js ***!
@@ -515,10 +518,10 @@ exports.default = Icon;
 
 __webpack_require__(/*! D:\wamp\www\github-projects\react-widget\icon\node_modules\packez\lib\fetchPolyfills.js */"./node_modules/packez/lib/fetchPolyfills.js");
 __webpack_require__(/*! D:\wamp\www\github-projects\react-widget\icon\node_modules\packez\lib\polyfills.js */"./node_modules/packez/lib/polyfills.js");
-module.exports = __webpack_require__(/*! D:\wamp\www\github-projects\react-widget\icon\examples\index.js */"./examples/index.js");
+module.exports = __webpack_require__(/*! ./examples/index.js */"./examples/index.js");
 
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.e4d22891.js.map
+//# sourceMappingURL=index.f4f49c97.js.map
