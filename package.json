@@ -82,7 +82,7 @@
         "mini-css-extract-plugin": "^0.4.5",
         "node-sass": "^4.10.0",
         "packez": "^1.0.17",
-        "postcss": "^7.0.6",
+        "postcss": "^8.2.10",
         "postcss-flexbugs-fixes": "^4.1.0",
         "postcss-loader": "^3.0.0",
         "precss": "^4.0.0",
